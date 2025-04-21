@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة التحكم - Darif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-box" id="login-box">
+  <h2>تسجيل دخول المدير</h2>
+  <input type="password" id="password" placeholder="كلمة المرور">
+  <button onclick="checkPassword()">دخول</button>
+  <p id="error" style="color:red;"></p>
+</div>
+
+<div class="admin-box" id="dashboard" style="display:none;">
+  <h2>مرحبًا بك في لوحة التحكم</h2>
+  <p>هنا سيتم عرض الطلبات قريبًا...</p>
+</div>
+
+<script>
+  function checkPassword() {
+    const password = document.getElementById('password').value;
+    if (password === 'admin123') {
+      document.getElementById('login-box').style.display = 'none';
+      document.getElementById('dashboard').style.display = 'block';
+    } else {
+      document.getElementById('error').innerText = "كلمة المرور غير صحيحة";
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darif Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    متجر Darif
+  </header>
+
+  <nav>
+    <a href="#">الملابس</a>
+    <a href="#">الإلكترونيات</a>
+    <a href="#order">طلب شراء</a>
+  </nav>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=قميص" alt="قميص">
+      <h3>قميص رجالي</h3>
+      <p>100 ريال</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=سماعة" alt="سماعة">
+      <h3>سماعة بلوتوث</h3>
+      <p>150 ريال</p>
+    </div>
+  </section>
+
+  <section class="order-form" id="order">
+    <h2>نموذج طلب الشراء</h2>
+    <form action="https://formsubmit.co/youremail@example.com" method="POST">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="tel" name="phone" placeholder="رقم الجوال" required>
+      <input type="text" name="address" placeholder="العنوان الكامل" required>
+      <select name="payment" required>
+        <option value="">اختر طريقة الدفع</option>
+        <option>بطاقة بنكية</option>
+        <option>الدفع عند الاستلام</option>
+      </select>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Darif Store - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
